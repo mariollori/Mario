@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vista.css">
+    
+    <title>Venta</title>
+
+</head>
+<body>
+    <input type="image" src="../Image/auto.jpg" id="Fondo">  
+    <div id="Container">
+        <header>
+            <aside id="Uno">
+                    <input type="image" src="../Image/logoexa.png" id="Sistemas">
+            </aside>
+            <aside id="Dos">
+                    <h1>Sistema de Ventas - Exa01 </h1>
+                   
+           </aside>
+        </header>
+        <nav>
+            <section class="b"><input type="submit" onclick="inicio()" value="Inicio" class="bt"></section>
+            <section class="b"><input type="submit" onclick="venta()" value="Venta" class="bt"></section>
+            <section class="b"><input type="submit" onclick="cliente()" value="Clientes" class="bt"></section>
+            <section class="b"><input type="submit" onclick="producto()" value="Producto" class="bt"></section>
+        </nav>
+        <main >
+            <div id="intro">
+                <h1 id="bienvenida">Bienvenidos al Sistema</h1>
+            </div>
+            <div id="venta">
+                <label style="color: brown; font-size: 40px;">Venta</label>
+                <hr ><br>
+                <label style="margin-left: 20px; font-size: 20px">Cliente:</label><br><br>
+                <input type="search" id="buscar" >
+                <button style="background-color: chartreuse">Buscar</button><br><br><br>
+                <table id="table1">
+                    <tr>
+                        <th class="t">Producto</th>
+                        <th class="t">Precio</th>
+                        <th class="t">Cantidad</th>
+                        <th class="t">Subtotal</th>
+                        <th class="t">Eliminar</th>
+                    </tr>
+                </table>
+
+               
+
+
+            </div>
+            <div id="clientes">
+                <label >Clientes</label>
+                <hr>
+                <table class="table">
+                        
+                                <tr>
+                                    <th class="t">Numero</th>
+                                    <th class="t">Nombre</th>
+                                    <th class="t">Apellidos</th>
+                                    <th class="t">Accion</th>
+                                    
+                                </tr>
+                                <tr>
+                                        <td class="t">1</td>
+                                        <td class="t">Nombre</td>
+                                        <td class="t">Llori Santiago</td>
+                                        <td class="t"><input type="button" value="ADD"></td>
+
+                                </tr>
+                                <tr>
+                                        <td class="t">2</td>
+                                        <td class="t">Daniel</td>
+                                        <td class="t">Vela Temoche</td>
+                                        <td class="t"><input type="button" value="ADD"></td>
+
+                                </tr>
+                                <tr>
+                                        <td class="t">3</td>
+                                        <td class="t">Nick</td>
+                                        <td class="t">Leonard</td>
+                                        <td class="t"><input type="button" value="ADD"></td>
+
+                                </tr>
+             </table>
+
+                   
+
+            </div>
+            <div id="productos">
+                    <label >Productos</label>
+                    <hr>
+                    <table class="table">
+                            <tr>
+                                    <th class="t">Numero</th>
+                                    <th class="t">Producto</th>
+                                    <th class="t">Precio</th>
+                                    <th class="t">Cantidad</th>
+                                    
+                                </tr>
+                                <tr>
+                                        <td class="t">1</td>
+                                        <td class="t">Teclado</td>
+                                        <td class="t">150</td>
+                                        <td class="t"><input type="text" ></td>
+
+                                </tr>
+                                <tr>
+                                        <td class="t">2</td>
+                                        <td class="t">Mouse</td>
+                                        <td class="t">20</td>
+                                        <td class="t"><input type="text" ></td>
+
+                                </tr>
+                                <tr>
+                                        <td class="t">3</td>
+                                        <td class="t">Parlantes</td>
+                                        <td class="t">10</td>
+                                        <td class="t"><input type="text" ></td>
+
+                                </tr>
+                        
+
+                        
+                    </table>
+
+            </div>
+
+
+
+
+        </main>
+
+           
+
+
+    </div>
+    <script src="cod.js"></script>
+</body>
+</html>
